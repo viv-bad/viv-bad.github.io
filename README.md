@@ -73,3 +73,4 @@ Pushing to the `main` (or `master`) branch of this repository on GitHub will aut
 ---
 
 This should give you a complete, functional starting point! Remember to replace all placeholder content with your own.
+.
