@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<div class="publications-page">
+  <header class="page-header">
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.content != "" %}
+    <div class="page-description">{{ page.content }}</div>
+    {% endif %}
+  </header>
+  <div class="publications-list">
+    {% if site.data.publications and site.data.publications.size > 0 %} {%
+    assign sorted_publications = site.data.publications | sort: "year" | reverse
+    %} {% for pub in sorted_publications %}
+    <article class="publication-item">
+      <h3>{{ pub.title | escape }}</h3>
+      <p class="authors"><em>{{ pub.authors }}</em></p>
+      <p class="venue">
+        {% if pub.type == "journal" %} {{ pub.journal }}{% if pub.volume %},
+        Vol. {{ pub.volume }}{% endif %}{% if pub.issue %}, No. {{ pub.issue
+        }}{% endif %}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}. ({{
+        pub.year }}) {% elsif pub.type == "conference" %} {{ pub.conference }}.
+        ({{ pub.year }}) {% elsif pub.type == "book_chapter" %} In: {{
+        pub.booktitle }}{% if pub.editor %}, edited by {{ pub.editor }}{% endif
+        %}. {{ pub.publisher }}{% if pub.pages %}, pp. {{ pub.pages }}{% endif
+        %}. ({{ pub.year }}) {% else %} {{ pub.venue | default: "Details not
+        specified" }}. ({{ pub.year }}) {% endif %}
+      </p>
+      <p class="links">
+        {% if pub.pdf %}<a
+          href="{{ pub.pdf | relative_url }}"
+          class="btn-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >[PDF]</a
+        >{% endif %} {% if pub.link %}<a
+          href="{{ pub.link }}"
+          class="btn-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >[Link]</a
+        >{% endif %} {% if pub.doi %}<a
+          href="https://doi.org/{{ pub.doi }}"
+          class="btn-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >[DOI]</a
+        >{% endif %} {% if pub.code %}<a
+          href="{{ pub.code }}"
+          class="btn-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >[Code]</a
+        >{% endif %} {% if pub.slides %}<a
+          href="{{ pub.slides | relative_url }}"
+          class="btn-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >[Slides]</a
+        >{% endif %}
+      </p>
+      {% if pub.abstract %}
+      <details>
+        <summary>Abstract</summary>
+        <p>{{ pub.abstract | markdownify }}</p>
+      </details>
+      {% endif %}
+    </article>
+    {% unless forloop.last %}
+    <hr class="publication-separator" />
+    {% endunless %} {% endfor %} {% else %}
+    <p>No publications to display yet. Please check back later!</p>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="projects-page">
+  <header class="page-header">
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.content != "" %}
+    <div class="page-description">{{ page.content }}</div>
+    {% endif %}
+  </header>
+
+  <div class="projects-list">
+    {% if site.data.projects and site.data.projects.size > 0 %} {% for project
+    in site.data.projects %}
+    <section class="project-item">
+      <h2>{{ project.name | escape }}</h2>
+      {% if project.image %}
+      <img
+        src="{{ project.image | relative_url }}"
+        alt="{{ project.name | escape }}"
+        class="project-image"
+      />
+      {% endif %}
+      <p class="project-description">{{ project.description | markdownify }}</p>
+      {% if project.technologies %}
+      <p><strong>Technologies:</strong> {{ project.technologies }}</p>
+      {% endif %}
+      <p>
+        {% if project.repository %}
+        <a
+          href="{{ project.repository }}"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View Repository</a
+        >
+        {% endif %} {% if project.live_demo %}
+        <a
+          href="{{ project.live_demo }}"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Live Demo</a
+        >
+        {% endif %}
+      </p>
+      {% if project.status %}
+      <p>
+        <small><em>Status: {{ project.status }}</em></small>
+      </p>
+      {% endif %}
+    </section>
+    {% unless forloop.last %}
+    <hr class="project-separator" />
+    {% endunless %} {% endfor %} {% else %}
+    <p>No projects to display yet. Please check back later!</p>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+- name: "AI-Powered Personal Assistant"
+  description: "Developed a personal assistant application using natural language processing and machine learning techniques to manage tasks, schedules, and provide information."
+  technologies: "Python, TensorFlow, Flask, NLTK"
+  repository: "https://github.com/yourusername/ai-assistant"
+  live_demo: "https://yourusername.github.io/ai-assistant-demo/" # Optional
+  image: "/assets/images/project_ai_assistant.png" # Optional: Add an image to assets/images
+  status: "Completed" # Ongoing, Completed, Archived
+
+- name: "E-commerce Platform Redesign"
+  description: "Led the front-end redesign for a major e-commerce website, focusing on improving user experience and mobile responsiveness. Resulted in a 20% increase in conversion rates."
+  technologies: "React, Redux, SCSS, Webpack, Figma"
+  # repository: (if private or not applicable)
+  # live_demo: (if internal)
+  image: "/assets/images/project_ecommerce.jpg" # Optional
+  status: "Completed"
+
+- name: "Open Source Data Visualization Tool"
+  description: "Contributed to an open-source library for creating interactive data visualizations in JavaScript. Implemented new chart types and improved accessibility."
+  technologies: "D3.js, JavaScript, HTML5, CSS3"
+  repository: "https://github.com/opensourceproject/dataviz-tool"
+  status: "Ongoing Contribution"

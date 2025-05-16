@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  <div class="profile-section">
+    {% if site.author_image or page.author_image %}
+    <img src="{{ page.author_image | default: site.author_image | relative_url }}" alt="Portrait of {{ site.author }}" class="profile-pic">
+    {% elsif '/assets/images/profile.jpg' %}
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Portrait of {{ site.author }}" class="profile-pic">
+    {% endif %}
+    <div class="profile-intro">
+        <h2>Hi, I'm {{ site.author }}</h2>
+        <p>{{ site.description }}</p>
+        <p>
+            <a href="mailto:{{ site.email }}">Email Me</a> |
+            {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a> | {% endif %}
+            {% if site.linkedin_username %}<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>{% endif %}
+        </p>
+    </div>
+  </div>
+
+  {{ content }}
+
+  {% if site.posts.size > 0 %}
+  <hr>
+  <h2>Latest News / Posts</h2>
+  <ul class="post-list">
+    {%- for post in site.posts limit:3 -%}
+    <li>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      {%- if post.excerpt -%}
+        {{ post.excerpt }}
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+  <p class="rss-subscribe">
+      <a href="{{ "/posts/" | relative_url }}">View all posts</a>
+      or subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+  </p>
+  {% endif %}
+
+</div>
