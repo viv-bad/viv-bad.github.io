@@ -5,7 +5,6 @@ This repository contains the source code for my personal portfolio website, buil
 ## Website Link
 
 [https://viv-bad.github.io/](https://viv-bad.github.io/)
-(Replace with your actual GitHub Pages URL. If it's a project site, it will be `https://viv-bad.github.io/repository-name/`)
 
 ## About This Site
 
@@ -15,7 +14,7 @@ This website showcases:
 - My projects
 - My publications
 - My CV
-- A blog/news section (optional)
+- A posts
 
 ## Local Development
 
@@ -29,8 +28,8 @@ To run this site locally:
 2.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/viv-bad/yourrepository.git](https://github.com/viv-bad/yourrepository.git)
-    cd yourrepository
+    git clone repo
+    cd repo
     ```
 
 3.  **Install dependencies:**
@@ -45,7 +44,7 @@ To run this site locally:
     bundle exec jekyll serve
     ```
 
-5.  Open your browser and navigate to `http://localhost:4000`.
+5.  Open browser and navigate to `http://localhost:4000`.
 
 ## Structure
 
@@ -60,13 +59,13 @@ To run this site locally:
 
 ## Customization
 
-- Update `_config.yml` with your personal details, social media links, etc.
+- Update `_config.yml` with personal details, social media links, etc.
 - Replace content in `_data/projects.yml` and `_data/publications.yml`.
-- Edit Markdown files in `pages/` and `index.md` for your content.
+- Edit Markdown files in `pages/` and `index.md` for content.
 - Modify `assets/css/style.scss` to change the visual appearance.
-- Add your CV PDF to `assets/cv/` and your profile picture to `assets/images/`.
+- Add your CV PDF to `assets/cv/` and profile picture to `assets/images/`.
 
 ## Deployment
 
-Pushing to the `main` (or `master`) branch of this repository on GitHub will automatically build and deploy the site via GitHub Pages. Ensure your repository is named `viv-bad.github.io` for a user/organization site, or that GitHub Pages is enabled for the project repository (usually from the `main` branch and `/ (root)` folder).
+Pushing to the `master` branch of this repository on GitHub will automatically build and deploy the site via GitHub Pages. Ensure the repository is named `viv-bad.github.io` for a user/organization site, or that GitHub Pages is enabled for the project repository (usually from the `main` branch and `/ (root)` folder).
 
