@@ -1,37 +1,31 @@
 # Site settings
-title: Vivek Badiani - Personal Portfolio
+title: Vivek Badiani - Software Engineer & Scientist
 author: Vivek Badiani
 email: vivekbadiani@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my personal website. I am a Scientist and Software Engineer
-  specializing in Energy, Fintech and Chemistry.
+  Full-Stack Software Engineer with PhD in Chemistry. Specializing in 
+  renewable energy, fintech, and materials science. Experienced in 
+  Python, JavaScript, React, and scientific computing.
 baseurl: "" # the subpath of your site, e.g. /blog. If hosted at username.github.io, this is ""
 url: "https://viv-bad.github.io" # your site's hostname
 
-# Social media links (replace with your own)
+# Social media links
 github_username: viv-bad
 linkedin_username: vivek-badiani
 # twitter_username: yourtwitterhandle
-# Add other social media if needed:
 google_scholar_id: 86YrbyUAAAAJ&hl
 # researchgate_profile: Your-ResearchGate-Profile
 
 # Build settings
-theme: minima # Set to null if you are providing all your layouts and styles
-# Alternatively, you can use a theme like 'minima':
-# theme: minima
-#
-# If not using a theme, you might need to specify plugins for basic functionality
+theme: minima
 plugins:
-  - jekyll-feed # For an RSS feed, especially if you add a blog
+  - jekyll-feed # For an RSS feed
   - jekyll-seo-tag # For better SEO
 
 # Navigation pages (used in _includes/navigation.html)
 nav_pages:
   - name: Home
     url: /
-  # - name: About
-  #   url: / # Points to homepage, can be a separate about.md if preferred
   - name: Projects
     url: /projects/
   - name: Publications
@@ -39,19 +33,11 @@ nav_pages:
   - name: CV
     url: /cv/
   - name: Posts
-    url: /posts/ # Add this if you plan to use the _posts folder for a blog
+    url: /posts/
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal list.
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-
+# Include _pages directory
 include:
-  - _pages # If you're using a _pages directory
+  - _pages
 
 exclude:
   - .sass-cache/
@@ -67,18 +53,11 @@ exclude:
   - README.md
   - .idea/
 
-# Optional: Setup for a simple blog listing page
-# This assumes you might create a `blog.md` in `pages/` with layout `page` or a custom `blog_index` layout
-# to list posts.
+# Defaults for posts
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post" # You'd need to create a _layouts/post.html
+      layout: "post"
       author: "Vivek Badiani"
-# --- Collections (if you want more structured content types beyond posts) ---
-# collections:
-#   my_collection:
-#     output: true
-#     permalink: /:collection/:name

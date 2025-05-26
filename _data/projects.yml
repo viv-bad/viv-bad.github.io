@@ -1,21 +1,34 @@
-- name: "AI-Powered Personal Assistant"
-  description: "Developed a personal assistant application using natural language processing and machine learning techniques to manage tasks, schedules, and provide information."
-  technologies: "Python, TensorFlow, Flask, NLTK"
-  repository: "https://github.com/yourusername/ai-assistant"
-  live_demo: "https://yourusername.github.io/ai-assistant-demo/" # Optional
-  image: "/assets/images/project_ai_assistant.png" # Optional: Add an image to assets/images
-  status: "Completed" # Ongoing, Completed, Archived
-
-- name: "E-commerce Platform Redesign"
-  description: "Led the front-end redesign for a major e-commerce website, focusing on improving user experience and mobile responsiveness. Resulted in a 20% increase in conversion rates."
-  technologies: "React, Redux, SCSS, Webpack, Figma"
-  # repository: (if private or not applicable)
-  # live_demo: (if internal)
-  image: "/assets/images/project_ecommerce.jpg" # Optional
+- name: "SolPred - Molecular Property Prediction Platform"
+  description: "Built graph neural network system for predicting molecular solubility to accelerate materials discovery workflows. Features interactive molecular visualization with Vue.js/Nuxt frontend and FastAPI backend serving ML models."
+  technologies: "PyTorch, Vue.js, Nuxt, FastAPI, Docker, Graph Neural Networks"
+  repository: "https://github.com/viv-bad/solubility-predictor"
+  # live_demo: "https://solpred-demo.herokuapp.com/" # Add if you have a demo
+  # image: "/assets/images/solpred_screenshot.png" # Add if you have screenshots
   status: "Completed"
 
-- name: "Open Source Data Visualization Tool"
-  description: "Contributed to an open-source library for creating interactive data visualizations in JavaScript. Implemented new chart types and improved accessibility."
-  technologies: "D3.js, JavaScript, HTML5, CSS3"
-  repository: "https://github.com/opensourceproject/dataviz-tool"
-  status: "Ongoing Contribution"
+- name: "CatGen - Laboratory Information Management System"
+  description: "Engineered comprehensive LIMS with real-time data visualization for experimental workflow optimization. Built with Node.js/React application featuring API-driven architecture for scientific data processing and analysis, enabling efficient tracking and collaboration for 20+ researchers."
+  technologies: "Node.js, React, PostgreSQL, RESTful APIs, Data Visualization"
+  repository: "https://github.com/viv-bad/CatGen"
+  # image: "/assets/images/catgen_dashboard.png"
+  status: "Completed"
+
+- name: "Solara Energy Platform"
+  description: "Architected scalable Node.js microservices for advanced energy calculation systems, reducing proposal generation time from days to 2 minutes. Built comprehensive proposal generation platform with Vue/Nuxt frontend featuring real-time energy consumption analysis and photovoltaic simulation engine."
+  technologies: "Node.js, Vue.js, Nuxt, AWS Bedrock, Microservices, Energy Modeling"
+  # repository: "https://github.com/viv-bad/solara-platform" # Private/proprietary
+  # live_demo: "https://solara.energy"
+  status: "Professional Project"
+
+- name: "Paisa Financial Platform"
+  description: "Developed comprehensive financial platform using Python (FastAPI) backend and React/Next.js frontend, serving as the core system driving 300% revenue growth with over $1M USD in remittance-backed loans processed. Designed scalable microservices architecture with comprehensive test coverage and CI/CD pipelines."
+  technologies: "Python, FastAPI, React, Next.js, Docker, GitHub Actions, Financial Modeling"
+  # repository: "https://github.com/viv-bad/paisa-platform" # Private/proprietary
+  # live_demo: "https://paisa.mx"
+  status: "Professional Project"
+
+- name: "Laboratory Chemical Inventory System"
+  description: "Built internal lab-based chemical inventory management tool for 20+ users using Python/Flask backend and vanilla JavaScript frontend. Streamlined chemical purchases and inventory tracking for university research laboratory."
+  technologies: "Python, Flask, JavaScript, PostgreSQL, Laboratory Management"
+  # repository: "https://github.com/viv-bad/lab-inventory"
+  status: "Completed"

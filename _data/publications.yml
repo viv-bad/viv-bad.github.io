@@ -1,30 +1,92 @@
-- title: "A Novel Approach to Understanding Complex Systems"
-  authors: "Your Name, Collaborator X, Supervisor Y"
-  journal: "Journal of Innovative Research"
-  volume: "10"
-  issue: "2"
-  pages: "123-145"
-  year: 2024
-  type: "journal" # journal, conference, preprint, book_chapter, etc.
-  pdf: "/assets/pdfs/sample_paper1.pdf" # Example path, you'd put your PDF here
-  doi: "10.1234/joi.2024.001"
-  code: "https://github.com/yourusername/project-code"
-  abstract: "This paper introduces a groundbreaking method for analyzing complex systems, with applications in various fields."
-
-- title: "Exploring the Future of Quantum Computing Interfaces"
-  authors: "Your Name, Co-author Z"
-  conference: "Proceedings of the International Conference on Future Computing (ICFC)"
-  year: 2023
-  type: "conference"
-  slides: "/assets/slides/quantum_slides.pdf" # Example path
-  link: "https://example.com/conference_paper_link"
-  abstract: "We presented our latest findings on user interface design for emerging quantum computing platforms."
-
-- title: "My Awesome Book Chapter"
-  authors: "Your Name"
-  booktitle: "The Big Book of Science"
-  editor: "Editor A. Smith"
-  publisher: "Academic Press"
+- title: "Engineering Electro- and Photocatalytic Carbon Materials for CO2 Reduction by Formate Dehydrogenase"
+  authors: "Badiani, V.M., Casadevall, C., Miller, M., Cobb, S.J., Manuel, R.R., Pereira, I.A.C., et al."
+  journal: "Journal of the American Chemical Society"
+  volume: "144"
+  issue: "31"
+  pages: "14207-14216"
   year: 2022
-  type: "book_chapter"
-  pages: "50-75"
+  type: "journal"
+  doi: "10.1021/jacs.2c04230"
+  abstract: "This paper presents novel approaches to engineering carbon materials for enhanced CO2 reduction using formate dehydrogenase enzymes."
+
+- title: "Elucidating film loss and the role of hydrogen bonding of adsorbed redox enzymes by electrochemical quartz crystal microbalance analysis"
+  authors: "Badiani, V.M., Cobb, S.J., Wagner, A., Oliveira, A.R., Zacarias, S., Pereira, I.A.C., et al."
+  journal: "ACS Catalysis"
+  volume: "12"
+  issue: "3"
+  pages: "1886-1897"
+  year: 2022
+  type: "journal"
+  doi: "10.1021/acscatal.1c05103"
+  abstract: "Investigation of enzyme-electrode interfaces using electrochemical quartz crystal microbalance analysis to understand film stability and hydrogen bonding effects."
+
+- title: "Fast CO2 hydration kinetics impair heterogeneous but improve enzymatic CO2 reduction catalysis"
+  authors: "Cobb, S.J., Badiani, V.M., Dharani, A.M., Wagner, A., Zacarias, S., Oliveira, A.R., et al."
+  journal: "Nature Chemistry"
+  volume: "14"
+  issue: "4"
+  pages: "417-424"
+  year: 2022
+  type: "journal"
+  doi: "10.1038/s41557-022-00880-2"
+  abstract: "Study revealing how CO2 hydration kinetics affect different catalytic approaches to CO2 reduction, with implications for sustainable fuel synthesis."
+
+- title: "Tuning the local chemical environment of ZnSe quantum dots with dithiols towards photocatalytic CO2 reduction"
+  authors: "Sahm, C.D., Ciotti, A., Mates-Torres, E., Badiani, V.M., Sokołowski, K., Neri, G., et al."
+  journal: "Chemical Science"
+  volume: "13"
+  issue: "20"
+  pages: "5988-5998"
+  year: 2022
+  type: "journal"
+  doi: "10.1039/D2SC01075E"
+  abstract: "Investigation of quantum dot surface modification for enhanced photocatalytic CO2 reduction performance."
+
+- title: "Bio-electrocatalytic conversion of food waste to ethylene via succinic acid as the central intermediate"
+  authors: "Pichler, C.M., Bhattacharjee, S., Lam, E., Su, L., Collauto, A., Roessler, M.M., Badiani, V.M., et al."
+  journal: "ACS Catalysis"
+  volume: "12"
+  issue: "21"
+  pages: "13360-13371"
+  year: 2022
+  type: "journal"
+  doi: "10.1021/acscatal.2c03626"
+  abstract: "Development of bio-electrocatalytic processes for converting food waste into valuable chemicals using enzymatic pathways."
+
+- title: "A photoelectrochemical-thermoelectric device for semi-artificial CO2 fixation employing full solar spectrum utilization"
+  authors: "Cobb, S.J., Pornrungroj, C., Andrei, V., Badiani, V.M., Su, L., Manuel, R.R., et al."
+  journal: "Device"
+  volume: "2"
+  issue: "11"
+  pages: "100181"
+  year: 2024
+  type: "journal"
+  doi: "10.1016/j.device.2024.100181"
+  abstract: "Novel device design combining photoelectrochemical and thermoelectric components for efficient solar-driven CO2 fixation."
+
+- title: "Synthetic approaches to artificial photosynthesis: general discussion"
+  authors: "Aitchison, C.M., Andrei, V., Antón-García, D., Apfel, U.P., Badiani, V.M., Beller, M., et al."
+  journal: "Faraday Discussions"
+  volume: "215"
+  pages: "242-281"
+  year: 2019
+  type: "conference"
+  doi: "10.1039/C9FD90020G"
+  abstract: "Comprehensive discussion on synthetic approaches to artificial photosynthesis systems and their potential applications."
+
+- title: "Biological approaches to artificial photosynthesis: general discussion"
+  authors: "Badiani, V.M., Bajada, M., Beller, M., Bocarsly, A.B., Bonnet, S., Bozal-Ginesta, C., et al."
+  journal: "Faraday Discussions"
+  volume: "215"
+  pages: "66-83"
+  year: 2019
+  type: "conference"
+  doi: "10.1039/C9FD90019A"
+  abstract: "Discussion on biological approaches and bio-inspired systems for artificial photosynthesis applications."
+
+- title: "Tailoring the redox enzyme-material interface for enhanced electro-and photocatalytic fuel synthesis"
+  authors: "Badiani, V.M."
+  booktitle: "PhD Thesis, University of Cambridge"
+  year: 2023
+  type: "thesis"
+  abstract: "Comprehensive study of enzyme-material interfaces for enhanced catalytic performance in sustainable fuel synthesis applications."
