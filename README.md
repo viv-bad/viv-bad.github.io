@@ -70,6 +70,3 @@ To run this site locally:
 
 Pushing to the `main` (or `master`) branch of this repository on GitHub will automatically build and deploy the site via GitHub Pages. Ensure your repository is named `viv-bad.github.io` for a user/organization site, or that GitHub Pages is enabled for the project repository (usually from the `main` branch and `/ (root)` folder).
 
----
-
-This should give you a complete, functional starting point! Remember to replace all placeholder content with your own.
