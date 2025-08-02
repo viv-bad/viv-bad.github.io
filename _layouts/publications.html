@@ -17,15 +17,17 @@ layout: default
       <h3>{{ pub.title | escape }}</h3>
       <p class="authors"><em>{{ pub.authors }}</em></p>
       <p class="venue">
-        {% if pub.type == "journal" %} {{ pub.journal }}{% if pub.volume %},
-        Vol. {{ pub.volume }}{% endif %}{% if pub.issue %}, No. {{ pub.issue
-        }}{% endif %}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}. ({{
-        pub.year }}) {% elsif pub.type == "conference" %} {{ pub.conference }}.
-        ({{ pub.year }}) {% elsif pub.type == "book_chapter" %} In: {{
-        pub.booktitle }}{% if pub.editor %}, edited by {{ pub.editor }}{% endif
-        %}. {{ pub.publisher }}{% if pub.pages %}, pp. {{ pub.pages }}{% endif
-        %}. ({{ pub.year }}) {% else %} {{ pub.venue | default: "Details not
-        specified" }}. ({{ pub.year }}) {% endif %}
+        {% if pub.type == "journal" %}
+          {{ pub.journal }}{% if pub.volume %}, Vol. {{ pub.volume }}{% endif %}{% if pub.issue %}, No. {{ pub.issue }}{% endif %}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}. ({{ pub.year }})
+        {% elsif pub.type == "conference" %}
+          {{ pub.conference }}. ({{ pub.year }})
+        {% elsif pub.type == "book_chapter" %}
+          In: {{ pub.booktitle }}{% if pub.editor %}, edited by {{ pub.editor }}{% endif %}. {{ pub.publisher }}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}. ({{ pub.year }})
+        {% elsif pub.type == "thesis" %}
+          {{ pub.booktitle }}. ({{ pub.year }})
+        {% else %}
+          {{ pub.venue | default: "Details not specified" }}. ({{ pub.year }})
+        {% endif %}
       </p>
       <p class="links">
         {% if pub.pdf %}<a

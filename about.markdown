@@ -4,15 +4,31 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## About This Site
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This is the personal website of **Vivek Badiani**, a Full-Stack Software Engineer with a PhD in Chemistry. The site showcases my work in renewable energy, fintech, and materials science applications.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+### Built With
 
+- **Jekyll** - Static site generator
+- **Minima Theme** - Clean, responsive design
+- **GitHub Pages** - Hosting platform
 
-[jekyll-organization]: https://github.com/jekyll
+### Site Structure
+
+- **Home** - Overview and latest posts
+- **Projects** - Portfolio of software projects
+- **Publications** - Academic and research publications
+- **CV** - Professional experience and skills
+- **Posts** - Blog articles and technical insights
+
+### Contact
+
+For questions about this site or collaboration opportunities, please reach out via:
+- Email: [vivekbadiani@gmail.com](mailto:vivekbadiani@gmail.com)
+- LinkedIn: [linkedin.com/in/vivek-badiani](https://linkedin.com/in/vivek-badiani)
+- GitHub: [github.com/viv-bad](https://github.com/viv-bad)
+
+---
+
+*This site is open source and available on [GitHub](https://github.com/viv-bad/viv-bad.github.io).*

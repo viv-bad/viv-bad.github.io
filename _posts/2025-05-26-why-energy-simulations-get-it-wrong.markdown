@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Most Energy Simulations Get It Wrong (And How We Fixed It)"
-date: 2025-05-26 10:00:00 +0000
+date: 2024-12-26 10:00:00 +0000
 categories: energy software simulation
 excerpt: "Building real-world energy systems taught me why academic models often fail in production—and how combining physics intuition with modern software practices creates better solutions."
 ---
